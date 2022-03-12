@@ -1,0 +1,32 @@
+@import '../r/r.css';
+
+/*
+* * * * *
+* Configuracion general
+* * * * * 
+*/
+html {
+    overflow: hidden;
+}
+html body
+{
+	font-size				: calc(10px + (13 - 10) * ((100vw - 300px) / (1600 - 300)));
+	-webkit-touch-callout	: none; /* iOS Safari */
+	-webkit-user-select		: none; /* Safari */
+	-khtml-user-select		: none; /* Konqueror HTML */
+	-moz-user-select		: none; /* Old versions of Firefox */
+	-ms-user-select			: none; /* Internet Explorer/Edge */
+		user-select			: none; 
+	background-color: #000000;
+	font-family: 'mr';
+}
+@font-face 
+{
+	font-family: 'mr';
+	src: url("./fonts/mr.ttf");
+}
+@font-face 
+{
+	font-family: 'mm';
+	src: url("./fonts/mm.ttf");
+}

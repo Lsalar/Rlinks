@@ -1,0 +1,316 @@
+/*
+	
+	COLORS - BG OPTIONS
+
+*/
+	#fondoColores
+	{
+		background-color: #3d3a75;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		z-index: 1;
+		display: block;
+		filter: blur(70px);
+	}
+
+	#fondoColores span
+	{
+		position: absolute;
+		border-radius: 100%;
+		overflow: hidden;
+		display: inline-block;
+	}
+		#fondoColores span.circulo-md
+		{
+			width: 7rem;
+			height: 7rem;
+			transform: scale(3);
+		}
+		#fondoColores span.circulo-gr
+		{
+			width: 9rem;
+			height: 9rem;
+			transform: scale(4);
+		}
+
+		#fondoColores span[data-pos="0"]
+		{
+			top: -10%;
+			right: 10%;
+			background-color: #2932a7;
+		}
+		#fondoColores span[data-pos="1"]
+		{
+			top: 0;
+			left: 50%;
+			background-color: #1c2d48;
+			transform: scale(2) translateX(-50%);
+		}
+		#fondoColores span[data-pos="2"]
+		{
+			top: 60%;
+			right: -5%;
+			background-color: #22222c;
+			transform: scale(3) translateY(-50%);
+		}
+		#fondoColores span[data-pos="3"]
+		{
+			top: 70%;
+			left: -5%;
+			transform: scale(3) translateY(-50%);
+			background-color: #22222c;
+		}
+
+/*
+
+	MAIN - HEADER - BANNER
+
+*/
+
+main
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+	header
+	{
+		display: block;
+		width: 100%;
+		height: 170px;
+		position: relative;
+		z-index: 2;
+	}
+		header figure
+		{
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+		}
+		header figure img
+		{
+			position: relative;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%) rotateZ(-45deg);
+		}
+
+/*
+
+	PROFILE - IMAGE HEADER
+
+*/
+#profile
+{
+	display: block;
+	width: 100%;
+	height: 200px;
+	position: relative;
+	transform: translateY(-50%);
+	text-align: center;
+	z-index: 3;
+}
+	#profile figure
+	{
+		display: inline-block;
+		width: 170px;
+		height: 170px;
+		border-radius: 100%;
+		background: #8b63b6;
+		background: -moz-linear-gradient(top,  #8b63b6 0%, #a2c1df 100%);
+		background: -webkit-linear-gradient(top,  #8b63b6 0%,#a2c1df 100%);
+		background: linear-gradient(to bottom,  #8b63b6 0%,#a2c1df 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8b63b6', endColorstr='#a2c1df',GradientType=0 );
+		overflow: hidden;
+		box-sizing: border-box;
+		padding: 1.5px;
+	}
+	#profile figure img
+	{
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 101%;
+		height: auto;
+	}
+
+/*
+
+	SECCION DE NOMBRE + SECCION DE CONTENIDO
+
+*/
+#infoUser
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	top:  -100px;
+	position: relative;
+}
+	#infoUser #name
+	{
+		color: #ffffff;
+		font-size: 1.3rem;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		width: fit-content;
+		max-width: 100%;
+		display: inline-block;
+		text-align: center;
+
+		background-image: linear-gradient(300deg, #93b2ff 50%, #b794fd 100%);
+		background-clip: text;
+		-webkit-background-clip:  text;
+		-webkit-text-fill-color: transparent;
+
+		font-family: "mm";
+		font-weight: 600;
+	}
+#infoCargo
+{
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+#cargo
+{
+	color: #ffffff;
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 0 0.3rem;
+	vertical-align: middle;
+}
+#bull
+{
+	font-size: 0.4rem;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: top;
+	top: 0.4rem;
+	position: relative;
+}
+#principal
+{
+	color: #ffffff;
+	font-size: 0.8rem;
+	text-align: center;
+	padding: 0 0.3rem;
+	vertical-align: middle;
+}
+	#principal a
+	{
+		vertical-align: middle;
+		color: #ffffff;
+		text-decoration: none;
+		display: inline-block;
+	}
+		#principal a i
+		{
+			vertical-align: middle;
+		}
+
+/*
+
+	SECCION DE INFORMACION DE USER
+	
+*/
+#infograp
+{
+	text-align: justify;
+	width: 100%;
+	position: relative;
+	top: -100px;
+	color: #ffffff;
+	font-size: 0.6rem;
+	box-sizing: border-box;
+	padding: 0.8rem;
+}
+
+#containerLinks
+{
+	text-align: center;
+	display: block;
+	position: relative;
+	top: -100px;
+	box-sizing: border-box;
+	padding: 0.8rem;
+}
+	#containerLinks a.contenedorLink:hover
+	{
+		background: #9e71fa;
+	}
+	#containerLinks a.contenedorLink
+	{
+		color: #ffffff;
+		width: 100%;
+		max-width: 280px;
+		min-width: 100px;
+		border-radius: 5px;
+		position: relative;
+		box-sizing: border-box;
+		height: fit-content;
+		padding: 0.6rem 0.3rem;
+		display: block;
+		margin: 0.5rem auto;
+
+		transition: background 600ms linear;
+
+		background: #83aed6;
+		background: -moz-linear-gradient(left,  #83aed6 0%, #9e71fa 100%);
+		background: -webkit-linear-gradient(left,  #83aed6 0%,#9e71fa 100%);
+		background: linear-gradient(to right,  #83aed6 0%,#9e71fa 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#83aed6', endColorstr='#9e71fa',GradientType=0 );
+	}
+		#containerLinks a.contenedorLink .izq
+		{
+			width: 40%;
+			display: inline-block;
+			text-align: right;
+			box-sizing: border-box;
+			padding-right: 0.4rem;
+			vertical-align: middle;
+			position: relative;
+		}
+
+		#containerLinks a.contenedorLink .izq:after
+		{
+			position: absolute;
+			content: "";
+			height: 100%;
+			width: 1px;
+			background-color: rgba(255,255,255,0.3);
+			right: 0;
+		}
+			#containerLinks a.contenedorLink .izq .cntLogo
+			{
+				display: inline-block;
+				width: fit-content;
+				font-size: 1rem;
+			}
+		#containerLinks a.contenedorLink .der
+		{
+			width: 60%;
+			display: inline-block;
+			text-align: left;
+			box-sizing: border-box;
+			padding-left: 0.4rem;
+			vertical-align: middle;
+		}
+			#containerLinks a.contenedorLink .der .cntTexto
+			{
+				display: inline-block;
+				width: fit-content;
+				font-size: 0.75rem;
+			}
